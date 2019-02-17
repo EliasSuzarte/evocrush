@@ -5,7 +5,7 @@ class Config{
     public $cacheID;
     public function __construct()
     {
-        $this->cacheID = 3; // rand(1,999999); // mude esse valor quando desejar que o navegador não use cahce no js e css
+        $this->cacheID = 2; // rand(1,999999); // mude esse valor quando desejar que o navegador não use cahce no js e css
         self::controller();
     }
 
