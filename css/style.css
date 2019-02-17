@@ -1,0 +1,680 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #fff;
+    background-color: #1a263d;
+}
+
+.container {
+    min-height: 565px;
+    padding-bottom: 40px;
+}
+
+.perfil{
+    font-size: 1.2em;
+    padding: 3px;
+    width: 250px;
+    text-align: center;
+    float: left;
+}
+
+.perfil h1{
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.success,.alert{
+    min-height: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+.success{
+    background-color: #1bab59;
+}
+.alert{
+    background-color: darkred;
+}
+
+a.forgetPass{
+    font-size: 12px;
+    text-decoration: none;
+    float: right;
+    color: #383535;
+    padding: 4px;
+    background-color: #c9fdef;
+    border-radius: 2px;
+}
+
+.recover{
+    width: 60%;
+    min-height: 250px;
+    margin: 0 20%;
+    padding: 10px;
+    box-sizing: border-box;
+  /*  background-color: #9b4133; */
+    background-color: #110821;
+    text-align: center;
+}
+.recover h1{
+    text-align: center;
+}
+.recover #btnrec{
+    background-color: chartreuse;
+    padding: 5px;
+    margin: 3px 0;
+    border-radius: 3px;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}
+.recover input{
+    margin: 10px 0;
+    height: 26px;
+}
+
+.perfil .upload{
+    background-color: transparent;
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    margin-top: -35px;
+
+}
+#upfoto{
+    display: none;
+}
+.up{
+    background-color: red;
+    padding: 5px 9px;
+    cursor: pointer;
+}
+
+.perfil .img{
+    width: 250px;
+    height: 220px;
+}
+.perfil .img img{
+    width: 250px;
+    height: 180px;
+}
+
+.sendmsg{
+    background-color: #ff6452;
+    width: 50%;
+    margin: 25px 0 0 251px;
+    min-height: 450px;;
+}
+.sendmsg textarea{
+    width: 80%;
+    height: 50px;
+    float: left;
+}
+
+.chatPerfil{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.sendmsg button{
+    display: block;
+    margin-left: 152px;
+    padding: 5px;
+    font-weight: 600;
+    height: 50px;
+    border-top-right-radius: 3px;
+    background-color: #fff;
+    color: brown;
+    border: 2px solid rgba(255, 222, 252, 0.98);
+}
+
+
+.vou, .naovou{
+    text-align: center;
+    color: white;
+    display: inline-block;
+    float: left;
+    border-radius: 4px;
+    padding: 15px 10px;
+    min-width: 60px;
+    cursor: pointer;
+    margin: 2px;
+}
+.vou{
+    background-color: green;
+}
+.naovou{
+    background-color: red;
+    float: right;
+}
+
+.button{
+    display: inline-block;
+    width: 420px;
+    margin-left: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.crush{
+    min-width: 655px;
+    height: 70%;
+    background-color: rgba(4, 20, 91, 0.75);
+    border: 2px solid rgba(255, 229, 241, 0.69);
+    padding: 6px;
+    top: 50px;
+    float: left;
+}
+.crush .img{
+    padding: 5px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 420px;
+    height: 350px;
+    background-color: rgba(4, 20, 91, 0.75);
+}
+
+.crush .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.crushInfo{
+    width: 220px;
+    background-color: #2b265a;
+    height: 337px;
+   padding: 9px;
+    float: left;
+    font-size: 1.1em;
+}
+
+.crushInfo a{
+    color: orangered;
+    text-decoration: none;
+}
+
+.mural{
+    width: 70%;
+    min-height: 250px;
+    margin: 0 10% 0 20%;
+    background-color: crimson;
+    position: absolute;
+    top: 50px;
+    border-radius: 3px;
+}
+
+.receivedMsgs .blockMsgNotify{
+    width: 50%;
+    background-color: #00c300;
+
+}
+
+.receivedMsgs .blockMsgNotify img{
+    width: 100%;
+    max-height: 200px;
+
+}
+
+.matches .matchBlock{
+ width: 50%;
+ background-color: orangered;
+}
+.matches .matchBlock img{
+    width: 100%;
+    max-height: 200px;
+}
+
+.notify{
+    background-color: #eac596;
+    padding: 3px;
+    width: 80%;
+    margin: 0 10%;
+}
+.notify a{
+    color: darkred;
+}
+
+.notify .receivedMsgs, .notify .matches{
+    width: 48%;
+    margin: 1%;
+    min-height: 250px;
+    float: left;
+    background-color: #403a3d;
+    display: block;
+}
+
+.notify .receivedMsgs p, .notify .matches p{
+    padding: 3px 5px;
+}
+
+
+
+
+.notification{
+    display: none;
+    background-color: #fd0d68;
+    padding: 5px;
+    color: #fff;
+    border: 1px solid #ccffde;
+    float: right;
+    margin:2px 5px;
+}
+
+
+.subscriber {
+    background-color: white;
+    padding: 10px;
+    min-height: 320px;
+    color: rgba(5, 0, 70, 0.8);
+    font-size: 18px;
+    font-weight: 600;
+    width:30%;
+    margin: 20px 15%;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.subscriber form{
+    align-content: center;
+}
+.subscriber h2{
+    color: rgba(5, 0, 70, 0.7);
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+
+.subscriber input[type='submit']{
+    padding: 6px;
+    border-radius: 3px;
+    background-color: rgba(5, 0, 70, 0.8);
+    color: #fff;
+    margin-top:15px;
+}
+#foto{
+    padding: 5px;
+    background-color: #1a263d;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+#foto>input{
+    display: none;
+}
+.subscriber>p{
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.subscriber input:not([type='submit']){
+    background-color: rgba(46, 224, 230, 0.2);
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid rgb(46, 224, 230);
+    display: block;
+    margin-bottom: 12px;
+
+}
+
+.subscriber input[type='radio']{
+    vertical-align: sub;
+}
+#sexOne{
+margin-right: 15px;
+}
+.subscriber label.sexo input{
+    display: initial;
+}
+
+#secnav {
+    /* section nave */
+    background-color: azure;
+   background-image: linear-gradient(#01010adb,#207994de);
+    min-height: 40px;
+}
+
+#secnav nav {
+    margin-left: 80px;
+}
+
+#secnav ul li {
+    display: inline-block;
+    margin-left: 5px;
+    padding: 5px 8px;
+    background-color: #1bab59;
+    background-image: linear-gradient(to right, rgb(146, 65, 121) , rgb(52, 70, 121));
+    height: 20px;
+    margin-top: 2px;
+    border-radius: 3px;
+    font-weight: 600;
+
+}
+#secnav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#foot {
+    background-color: azure;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    color: rgba(5,0,70,0.8);
+    float: left;
+}
+
+
+#foot footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#foot footer a{
+    text-decoration: none;
+}
+
+.online{
+    width: 70%;
+    height: 450px;
+    top:45px;
+}
+
+
+.online .perfilsOnline{
+    background-color: #fff;
+    width: 25%;
+    float: right;
+    min-height: 450px;
+    color: #000;
+}
+.online .perfilsOnline h1{
+    font-size: 17px;
+    padding: 4px 6px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chat{
+    width: 75%;
+    float: left;
+}
+
+.textbar textarea{
+    width:  86%;
+    height:42px;
+    border-radius: 3px;
+    margin: 3px;
+    float: left;
+
+}
+
+.red{
+    background-color: red !important;
+}
+
+.gerenciar{
+    width: 80%;
+    margin: 0 10%;
+    background-color: #48b955;
+    text-align: center;
+    min-height: 300px;
+    float: left;
+}
+.gerenciar form{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 25px;
+}
+.gerenciar input{
+    height: 25px;
+}
+.gerenciar label{
+    display: inline-block;
+    padding: 3px;
+}
+.gerenciar button{
+    background-color: #ff6452;
+    padding: 6px;
+    color: white;
+    font-weight: 700;
+}
+.isOnline,.notOnline{
+    background-color: #00c300;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.notOnline{
+    background-color: red;
+
+}
+
+.profileBlock{
+    padding: 2px;
+    float: left;
+    height: 220px;
+}
+
+.profileBlock img{
+  height: 200px;
+  width: 225px;
+}
+
+.profileBlock .info{
+    width: 225px;
+    height: 25px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.5);
+    padding: 5px;
+    box-sizing: border-box;
+    bottom: 25px;
+    position: relative;
+    font-weight: 600;
+}
+.profileBlock a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.msgsBlock{
+    display: block;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+
+}
+
+.msgsBlock .mulher{
+    color: magenta;
+}
+.msgsBlock .homem{
+    color: aqua;
+}
+
+.msgsBlock .msgs{
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    font-size: 1.1em;
+}
+
+#submitJS {
+    background-color: #1a263d;
+    padding: 5px 8px;
+    border-radius: 3px;
+    color: white;
+    height: 40px;
+    float: left;
+    border: 1px solid #fff;
+}
+
+.inChat{
+    display: block;
+    padding: 4px;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.inChat.mulher a{
+    color: darkred;
+    text-decoration: none;
+}
+
+.inChat.homem a{
+    color: blue;
+    text-decoration: none;
+}
+
+
+
+
+#showmsg{
+    padding: 14px;
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: monospace;
+    display: none;
+}
+
+#x{
+    text-align: center;
+    font-size: 1.3em;
+    color:red;
+    display: none;
+}
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 800px){
+      
+    .gerenciar{
+      width:100%;
+      margin:0;
+     }
+     .recover{
+       width:100%;
+       margin:0;
+     }
+    .receivedMsgs .blockMsgNotify, .matches .matchBlock{
+        width: 100%;
+    }
+    .notify{
+        margin: 0;
+        width: 100%;
+    }
+
+    .sendmsg{
+        width: 100%;
+        min-height: 60px;
+        height: 180px;
+        background-color: rgb(47, 60, 72);
+        margin: 50px 0 0 0;
+    }
+    .chatPerfil{
+        height: 180px;
+    }
+    .perfil{
+        display: none;
+            width: 50%;
+            margin: 0 15%;
+    }
+ .online{
+     width: 100%;
+ }
+ .chat{
+     width: 100%;
+ }
+
+ .online .perfilsOnline{
+     width: 100%;
+     margin-top: 15px;
+
+     min-height: 50px;
+ }
+.subscriber{
+    width: 100%;
+    margin: 0;
+}
+
+form{
+    width: 80%;
+    margin: 0 10%;
+}
+#secnav nav{
+    margin-left: 0;
+    border-bottom: 2px solid rgba(255,49,76,0.75);
+    clear: both;
+}
+
+#secnav nav li{
+ display: block;
+}
+#secnav nav ul{
+    display: none;
+}
+#toggle{
+    background-image: url("/img/menu.png");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+
+}
+
+
+
+
+@media (max-width: 640px) {
+      .sendmsg{
+        background-color: #0c1c3ab8;
+    }
+    
+    .crush{
+        min-width: 0;
+        width: 99%;
+    }
+    .crushInfo{
+        min-width: 0;
+        width: 96.5%;
+        height: 0; /*zera height para min-heigth funcionar */
+        min-height: 120px;
+    }
+
+    .crush .img{
+        width: 99%;
+    }
+    .crush .button{
+        width: 98%;
+    }
+
+}
+
+
